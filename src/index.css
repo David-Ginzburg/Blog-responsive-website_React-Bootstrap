@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.myClass {
+  background-color: burlywood;
+  font-size: 2rem;
+}

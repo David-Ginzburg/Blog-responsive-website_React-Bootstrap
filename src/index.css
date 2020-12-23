@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.carousel-inner {
+  height: 650px;
+}
+
 .myClass {
   background-color: burlywood;
   font-size: 2rem;

@@ -34,7 +34,7 @@ export default class About extends Component {
                                         alt="first"
                                         width="800"
                                         height="400"
-                                        className="mb-2"
+                                        className="mb-2 img100"
                                     />
                                     <p>
                                         Aliquip deserunt adipisicing dolor quis minim sunt tempor in voluptate eiusmod nulla. Dolor cillum esse est eu minim fugiat qui reprehenderit. Dolore ad ipsum id sint anim. Excepteur duis minim excepteur in sit culpa commodo Lorem occaecat est laborum labore consequat. Irure in consectetur mollit cupidatat cupidatat quis aute consequat tempor in.
@@ -46,7 +46,7 @@ export default class About extends Component {
                                         alt="second"
                                         width="800"
                                         height="400"
-                                        className="mb-2"
+                                        className="mb-2 img100"
                                     />
                                     <p>
                                         Aliquip deserunt adipisicing dolor quis minim sunt tempor in voluptate eiusmod nulla. Dolor cillum esse est eu minim fugiat qui reprehenderit. Dolore ad ipsum id sint anim. Excepteur duis minim excepteur in sit culpa commodo Lorem occaecat est laborum labore consequat. Irure in consectetur mollit cupidatat cupidatat quis aute consequat tempor in.
@@ -58,7 +58,7 @@ export default class About extends Component {
                                         alt="third"
                                         width="800"
                                         height="400"
-                                        className="mb-2"
+                                        className="mb-2 img100"
                                     />
                                     <p>
                                         Aliquip deserunt adipisicing dolor quis minim sunt tempor in voluptate eiusmod nulla. Dolor cillum esse est eu minim fugiat qui reprehenderit. Dolore ad ipsum id sint anim. Excepteur duis minim excepteur in sit culpa commodo Lorem occaecat est laborum labore consequat. Irure in consectetur mollit cupidatat cupidatat quis aute consequat tempor in.
@@ -70,7 +70,7 @@ export default class About extends Component {
                                         alt="fourth"
                                         width="800"
                                         height="400"
-                                        className="mb-2"
+                                        className="mb-2 img100"
                                     />
                                     <p>
                                         Aliquip deserunt adipisicing dolor quis minim sunt tempor in voluptate eiusmod nulla. Dolor cillum esse est eu minim fugiat qui reprehenderit. Dolore ad ipsum id sint anim. Excepteur duis minim excepteur in sit culpa commodo Lorem occaecat est laborum labore consequat. Irure in consectetur mollit cupidatat cupidatat quis aute consequat tempor in.
@@ -82,7 +82,7 @@ export default class About extends Component {
                                         alt="fift"
                                         width="800"
                                         height="400"
-                                        className="mb-2"
+                                        className="mb-2 img100"
                                     />
                                     <p>
                                         Aliquip deserunt adipisicing dolor quis minim sunt tempor in voluptate eiusmod nulla. Dolor cillum esse est eu minim fugiat qui reprehenderit. Dolore ad ipsum id sint anim. Excepteur duis minim excepteur in sit culpa commodo Lorem occaecat est laborum labore consequat. Irure in consectetur mollit cupidatat cupidatat quis aute consequat tempor in.

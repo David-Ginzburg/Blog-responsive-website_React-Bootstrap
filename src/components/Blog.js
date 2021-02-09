@@ -5,7 +5,7 @@ export default class Blog extends Component {
     render() {
         return (
             <Container>
-                <Row>
+                <Row className="reverse">
                     <Col md="9">
                         <Media className="m-5">
                             <img 

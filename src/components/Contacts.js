@@ -38,7 +38,7 @@ export default class Contacts extends Component {
 
     render() {
         return (
-            <Container style={{width: 500}}>
+            <Container className="restrict">
                 <h1 className="text-center">Contact Us</h1>
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formBasicEmail">

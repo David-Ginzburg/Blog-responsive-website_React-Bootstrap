@@ -8,7 +8,27 @@ div.restrict {
   width: 500px;
 }
 
+@media (max-width: 992px) {
+  nav.navbar .container {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  form.form-inline {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 768px) {
+  nav.navbar {
+    min-height: 20vh;
+  }
+  
+  .carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+  }
+
   .col-md-9 .media {
     display: flex;
     flex-direction: column;

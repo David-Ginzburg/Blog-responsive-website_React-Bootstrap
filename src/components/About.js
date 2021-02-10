@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Tab, Row, Col, Nav } from 'react-bootstrap'
+import { Container, Tab, Row, Col, Nav, Button, Card, CardDeck } from 'react-bootstrap'
 
 export default class About extends Component {
     render() {
@@ -41,16 +41,34 @@ export default class About extends Component {
                                     </p>
                                  </Tab.Pane>
                                  <Tab.Pane eventKey="second">
-                                    <img 
-                                        src="https://ymedialabs.com/wp-content/uploads/2020/04/figma-prototype2-1675x1116.jpg"
-                                        alt="second"
-                                        width="800"
-                                        height="400"
-                                        className="mb-2 img100"
-                                    />
-                                    <p>
-                                        Aliquip deserunt adipisicing dolor quis minim sunt tempor in voluptate eiusmod nulla. Dolor cillum esse est eu minim fugiat qui reprehenderit. Dolore ad ipsum id sint anim. Excepteur duis minim excepteur in sit culpa commodo Lorem occaecat est laborum labore consequat. Irure in consectetur mollit cupidatat cupidatat quis aute consequat tempor in.
-                                    </p>
+                                    <Container className="mb-3">
+                                        <h2 className="text-center m-4">Our team</h2>
+                                        <CardDeck>
+                                            <Card bg="info">
+                                                <Card.Img 
+                                                    variant="bottom"
+                                                    src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                />
+                                                <Card.Body>
+                                                    <Card.Title>Developers</Card.Title>
+                                                    <Card.Text>Nulla est eiusmod fugiat sunt qui ullamco excepteur aliquip consectetur ex excepteur Lorem.</Card.Text>
+                                                    <Button variant="primary">About Team</Button>
+                                                </Card.Body>
+                                            </Card>
+                                            <Card border="success">
+                                                <Card.Img 
+                                                    variant="top"
+                                                    src="https://images.pexels.com/photos/3401403/pexels-photo-3401403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=700&w=1200"
+                                                    height="232"
+                                                />
+                                                <Card.Body>
+                                                    <Card.Title>Developers</Card.Title>
+                                                    <Card.Text>Nulla est eiusmod fugiat sunt qui ullamco excepteur aliquip consectetur ex excepteur Lorem.</Card.Text>
+                                                    <Button variant="primary">About Team</Button>
+                                                </Card.Body>
+                                            </Card>
+                                        </CardDeck>
+                                    </Container>
                                  </Tab.Pane>
                                  <Tab.Pane eventKey="third">
                                     <img 

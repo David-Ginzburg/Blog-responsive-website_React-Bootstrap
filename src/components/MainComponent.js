@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
+import { LinkContainer } from 'react-router-bootstrap'
 import logo from '../logo.svg'
 
 import Home from './Home'
@@ -15,23 +16,33 @@ export default class Header extends Component {
             <>
                 <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                     <Container>
-                        <Navbar.Brand href="/" >
-                            <img
-                                src={logo}
-                                height="30"
-                                width="30"
-                                className="d-inline-block align-top"
-                                alt="Logo"
-                            />{" "}
-                            React site
-                        </Navbar.Brand>
+                        <LinkContainer to="/">
+                            <Navbar.Brand>
+                                <img
+                                    src={logo}
+                                    height="30"
+                                    width="30"
+                                    className="d-inline-block align-top"
+                                    alt="Logo"
+                                />{" "}
+                                React site
+                            </Navbar.Brand>
+                        </LinkContainer>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href="/" >Home</Nav.Link>
-                                <Nav.Link href="/about" >AboutUs</Nav.Link>
-                                <Nav.Link href="/contacts" >Contacts</Nav.Link>
-                                <Nav.Link href="/blog" >Blog</Nav.Link>
+                                <LinkContainer to="/">
+                                    <Nav.Link>Home</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to="/about">
+                                    <Nav.Link>AboutUs</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to="/contacts">
+                                    <Nav.Link>Contacts</Nav.Link>
+                                </LinkContainer>
+                                <LinkContainer to="/blog">
+                                    <Nav.Link>Blog</Nav.Link>
+                                </LinkContainer>
                             </Nav>
                             <Form inline>
                                 <FormControl 
@@ -45,14 +56,13 @@ export default class Header extends Component {
                     </Container>
                 </Navbar>
 
-                <Router>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/about" component={About} />
-                        <Route exact path="/contacts" component={Contacts} />
-                        <Route exact path="/blog" component={Blog} />
-                    </Switch>
-                </Router>
+                    
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contacts" component={Contacts} />
+                    <Route exact path="/blog" component={Blog} />
+                </Switch>
             </>
         )
     }
